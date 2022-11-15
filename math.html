@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*console.log(Math.ceil(8.4))
+		console.log(Math.floor(8.4))
+		console.log(Math.round(8.4))
+		console.log(Math.round(8.4))
+		console.log(Math.abs(-8.4))
+		console.log(Math.sqrt(16))
+		console.log(Math.pow(8,4))
+		console.log(Math.random())*/
+		var group="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$&",randomPassword=[];for(i=1;i<=8;i++){
+			var randomNumber=Math.floor(Math.random()*group.length)
+			console.log(randomNumber,group.charAt(randomNumber))
+			randomPassword.push(group.charAt(randomNumber))
+		}
+		console.log(randomPassword)
+		var result=randomPassword.join('');
+		console.log(result)
+	</script>
+</body>
+</html>
